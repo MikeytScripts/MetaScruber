@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MetaScrub Privacy Policy</title>
+  <meta name="color-scheme" content="dark light">
+  <style>
+    :root { --bg: #0b0c0e; --surface: #131417; --text: #f3f3ee; --text-2: #abaca4; --accent: #c6f432; --border: rgba(255, 255, 255, 0.08); color-scheme: dark; }
+    @media (prefers-color-scheme: light) { :root { --bg: #f3f2ec; --surface: #ffffff; --text: #111214; --text-2: #4f504a; --accent: #4d7c0f; --border: rgba(20, 20, 15, 0.1); color-scheme: light; } }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+    h1 { font: 800 clamp(2rem, 6vw, 2.6rem)/1.1 "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif; letter-spacing: -0.04em; margin: 0 0 8px; }
+    h2 { font-size: 1.15rem; margin: 36px 0 8px; letter-spacing: -0.01em; }
+    p, li { color: var(--text-2); }
+    strong { color: var(--text); }
+    a { color: var(--accent); }
+    .meta { color: var(--text-2); font-size: 14px; margin-bottom: 28px; }
+    .card { padding: 16px 20px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>MetaScrub Privacy Policy</h1>
+  <p class="meta">Last updated: October 28, 2026</p>
+
+  <div class="card"><p><strong>In short:</strong> MetaScrub runs on your own computer. It has no servers, no accounts and no tracking. It only sends data to YouTube (Google) and, if you add a key, to Anthropic, and only to do what you ask it to do.</p></div>
+
+  <h2>What MetaScrub is</h2>
+  <p>MetaScrub is a desktop app for creators. It removes hidden metadata from video files, adds watermarks, tracks your YouTube channels’ public statistics, and uploads and schedules Shorts to YouTube channels you own and connect.</p>
+
+  <h2>Data stored on your computer</h2>
+  <p>Settings, your upload queue, upload history and tracked statistics are saved in files in your Documents folder (<code>Documents\MetaScrub</code>). Google sign-in tokens and API keys are encrypted with Windows’ built-in data protection. Nothing is stored on any MetaScrub server, because there isn’t one.</p>
+
+  <h2>YouTube API Services</h2>
+  <p>MetaScrub uses YouTube API Services. By using its YouTube features you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google’s use of your information is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  <ul>
+    <li><strong>What it accesses:</strong> with your permission, it uploads videos to the channels you connect (<code>youtube.upload</code>) and reads those channels’ names and the status of videos it uploaded (<code>youtube.readonly</code>). The Tracker reads public channel and video statistics with your own API key.</li>
+    <li><strong>What it sends:</strong> the videos you add, with the titles, descriptions, tags and publish times shown in the app.</li>
+    <li><strong>What it never does:</strong> delete or edit existing videos, read private data, share your data with third parties, or use it for advertising.</li>
+    <li><strong>Revoking access:</strong> disconnect a channel in MetaScrub, or remove MetaScrub at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Deleting the <code>Documents\MetaScrub</code> folder removes all locally stored data.</li>
+  </ul>
+
+  <h2>AI titles (Anthropic)</h2>
+  <p>If you add your own Anthropic API key, MetaScrub sends four small still frames from each video you schedule, plus its file name and your channel’s style notes, to Anthropic’s API to write a title, description and hashtags. Anthropic’s handling of that data is covered by its <a href="https://www.anthropic.com/legal/privacy">privacy policy</a>. Without a key, nothing is sent to Anthropic.</p>
+
+  <h2>Other downloads</h2>
+  <p>On first use, MetaScrub may download the open-source tools ffmpeg and yt-dlp from their official GitHub releases. No personal data is sent.</p>
+
+  <h2>Children</h2>
+  <p>MetaScrub is not directed at children under 13.</p>
+
+  <h2>Changes and contact</h2>
+  <p>Changes to this policy are published on this page. Questions: ask on our Discord at <a href="https://discord.gg/HnqkyDkFUA">discord.gg/HnqkyDkFUA</a>.</p>
+</main>
+</body>
+</html>
