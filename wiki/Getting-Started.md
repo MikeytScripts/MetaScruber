@@ -31,7 +31,7 @@ The download is free, but you need a **license key** to use it. **[Get one on Di
 | To use... | You need |
 |---|---|
 | **Schedule** | Connect your YouTube channels (Schedule → **Connect a channel**) |
-| **AI titles** | An AI API key. See [OpenRouter: API Key and Choosing a Model](OpenRouter-Setup). |
+| **AI titles** | An OpenRouter (or Anthropic) API key in **Schedule → Settings**. See [OpenRouter: API Key and Choosing a Model](OpenRouter-Setup). |
 | **Tracker** | Your own YouTube API key |
 | **Discord alerts** | A Discord webhook URL. See [Features → Discord alerts](Features#discord-alerts). |
 

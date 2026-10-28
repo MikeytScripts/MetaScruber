@@ -39,7 +39,7 @@ Upload and schedule Shorts to the YouTube channels you own.
 
 MetaScrub writes a title, description and hashtags for each video you schedule. It looks at **four still frames** from the video, plus its file name and that channel's **Style notes for the AI**, and learns from your best-performing Shorts.
 
-This needs your own AI API key. To set it up with OpenRouter and choose a model, see **[OpenRouter: API Key and Choosing a Model](OpenRouter-Setup)**. Without a key, nothing is sent to an AI service.
+This needs your own AI API key, added in **Schedule → Settings** (OpenRouter or Anthropic). To set it up with OpenRouter and choose a model, see **[OpenRouter: API Key and Choosing a Model](OpenRouter-Setup)**. Without a key, nothing is sent to an AI service and titles are made from the file name instead.
 
 A tag limit counter warns you before you go over YouTube's tag limit.
 

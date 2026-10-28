@@ -28,7 +28,11 @@ Models whose ID ends in `:free` cost nothing, but they have tight daily limits a
 
 ### 4. Add it to MetaScrub
 
-Paste the key into MetaScrub where it asks for your AI / OpenRouter API key, and choose your model (Part 2). MetaScrub's built-in **model browser** lets you search OpenRouter's models without leaving the app.
+1. Open **Schedule → Settings**.
+2. Choose **OpenRouter** as the AI provider.
+3. Paste your key into the OpenRouter API key field.
+4. Click **Browse models** to pick a model (see Part 2), or paste a model ID copied from openrouter.ai/models. MetaScrub needs **both** a key and a model.
+5. Save.
 
 MetaScrub stores the key on your PC only, encrypted with Windows' built-in data protection.
 
@@ -36,12 +40,15 @@ MetaScrub stores the key on your PC only, encrypted with Windows' built-in data 
 
 ### 5. If something goes wrong
 
-| Error | Meaning | Fix |
+If AI titles fail, MetaScrub still uploads the video, but the **title is made from the file name** instead. Check the video in the Queue for the reason, then use this table.
+
+| Message | Meaning | Fix |
 |---|---|---|
-| 401 | Key missing or wrong | Paste it again, with no spaces. Check it still exists on the Keys page. |
+| "That OpenRouter API key isn't valid" / 401 | Key missing or wrong | Paste it again, with no spaces. Check it still exists on the Keys page. |
 | 402 | Out of credits | Add credits, raise the key's credit limit, or switch to a `:free` model |
 | 429 | Rate limited | Wait a bit. Very common on `:free` models; adding credits helps. |
-| 400 / 404 | Model not found, or it can't take images | Pick the model again from the model browser. Make sure it accepts **image** input. |
+| "OpenRouter has no chat model called ..." | The model ID is wrong or was retired | Click **Browse models** and pick it again |
+| "...can't see images, so the title is based on the file name and style notes" | The model is text-only | Pick a model that accepts **image** input |
 
 You can see every request and what it cost on OpenRouter's **Activity** page.
 
@@ -59,7 +66,7 @@ On **https://openrouter.ai/models**, use the input filter on the left to show on
 
 Every model has an ID like **`company/model-name`**, for example `google/...` or `anthropic/...`. A `:free` suffix means the free, rate-limited version.
 
-Models get new versions often, so copy the current ID from the model's page (or pick it in MetaScrub's model browser) rather than typing it from memory.
+Models get new versions often, so copy the current ID from the model's page (or pick it with **Browse models** in MetaScrub) rather than typing it from memory.
 
 ### What to compare
 

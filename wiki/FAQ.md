@@ -12,10 +12,14 @@ No. Each key activates on one PC. Ask on [Discord](https://discord.gg/HnqkyDkFUA
 **Does scrubbing lower the quality?**
 No. Nothing is re-encoded.
 
-**AI titles aren't being written.**
+**A video went up with its file name as the title, no description or no hashtags.**
+That means the AI title step didn't run or failed, so MetaScrub fell back to a title made from the file name.
+- Open **Schedule → Settings** and check an AI provider is chosen, and that both an **OpenRouter API key** and a **model** are filled in. The message "Add an OpenRouter (or Anthropic) key in Schedule → Settings" means one is missing.
 - Check that your API key is entered and still exists on [openrouter.ai/keys](https://openrouter.ai/keys).
 - Check you have credits, or that the key's credit limit isn't used up.
 - Make sure the model you picked accepts **image** input. MetaScrub sends still frames, so text-only models won't work.
+- Hashtags you always want (like `#Shorts`) go in **Calendar & settings → Post settings → Hashtags on every post**, so they're added even when the AI step fails.
+- Turn on **Approve titles before upload** so you can catch a bad title before it goes live.
 - See the error table in [OpenRouter: API Key and Choosing a Model](OpenRouter-Setup#5-if-something-goes-wrong).
 
 **Uploads stopped with a quota message.**
